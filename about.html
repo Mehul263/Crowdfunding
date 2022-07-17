@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p></p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://digitallearning.eletsonline.com/wp-content/uploads/2012/10/Shanthi-Menon1.jpg" alt="Shanti Menon" style="width:100%">
+      <div class="container">
+        <h2>Shanti Menon</h2>
+        <p class="title">Senior Principal</p>
+        <p>Some text that describes ma'am.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="http://gunjur.deensacademy.com/wp-content/uploads/2015/06/hema-maam.jpg" alt="Hemalata Pande" style="width:100%">
+      <div class="container">
+        <h2>Hemalata Pande</h2>
+        <p class="title">Principal</p>
+        <p>Some text that describes ma'am.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUSEhUSEhISEhgYGBIZEhoYGBkSFBISGBgaGRgVGBgdIS4nHB8sHxgYJ0YrLC8xNzU1HCQ7QDszPy40OjEBDAwMEA8QHhISHjEhJCs0NDQ0NDE0NjQ2NDU0NDQ0NDE0NDQ0MTQ0MTExMTQ0NDE0NDQ0MTQ0NDQ0NDQ0NDQ0Mf/AABEIAMMBAgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcBBAUDCAL/xABEEAACAgEBBQUCCgkCBQUAAAABAgADEQQFBhIhMQcTQVFhIpEXMkJSVHGBwdHTFCMzYnKSobGyFRZVk6LS8EOCg+Hx/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwUEBv/EACYRAQEAAgEDAwQDAQAAAAAAAAABAhEDEiExBBNRIkFhsQUycRT/2gAMAwEAAhEDEQA/ALmiIgIiICIiAiIgIiICIiAiJ+HYAEkgAcyTyAHnA/USsd5+1Na2arQotxU4axsioEdQoHNv6D1kWPahtH52m/5Tf98vOPK906q95mVNu72rEsE19aoCf2tQPCv8dZyQPUE/ZLTpuV1DowZWAKkHIYHoQZXLG4+UPaIiQEREBERAREQEREBERAREQEREBERAREQEREBERARESAiYzPHUXqiM7sFVQSxJwAB4kwPaV12vbbanTppq2KteTxkciKl6gH1OBJpsna9Wqr7yh+JckHwKn94HmPOVj216dhbprefCUsT048hse4GX49XKJ1ZdVWYERE9qxLY7HNssy26JzkVjjqzzKqThlHpnBx9cqeT7sc07NrrHGcLU3F5EswAEz5Z9KKu2JobV2pVpamuvcIi9T4k+AA8T6T00Gvr1Fa21MHRhlSP/ADkfSeNTbciIhJERARESQiIgIiICIiAiIgIiICIiAiIgIiIGJiJp7S19enra21gqqOZ8T5ADxJ8pCZLbqP1rtYlNbW2sERBliegH3nwwOZPKVHvVvQ+ufhXKUKconRnI+U/r+74fXPHefeKzXWc8pUpzUmfHpxt5t1+oHA8SeLPLycu+08O36P0Uw+vPz+m/sba1uktFtTc+jqfiuvzWH3+EsbW10bd0LIrcDjBGRlqLh0z5g+Y6iVWoJIAGSSAPUnkBO5s3Z+0NNYttOmvVh19lirr4qw8RHDyZS/hPrfT8ec6tzG/tCdq7Mu0lpp1NZrcZxnmrr85G6Mv1fbiak+kNMtev04Gq0uOft13oG4XHyl4hzHkROc3Z5s0nP6Iv1cdgHu4p0seea7uJe11VD6DR2aixaaK2tsb4qL1x84k8lX1JAEuvYeio2DoC+psBsYg2Ec2ewj2aax1IH4k4HTr6o6bZOmeyrTBFyPYpr9u2z5IOBkn1PQSk94NuXa643XnmMhEGeGlc/FUHx6ZbqceQAGXJy9XZhy8vTHtvNvHdtC3jsPCgz3dYOVQefq3rPfdLeq3Z9mVBsqY/ra84z++hPIN/Q9D5iPRMdvB7mXV1b7vpPZG1KtVUt1DixG6EZBB8QwPNSPIzfnzvuvvHds+3vKzxIxHfVk4Wwef7rAdG+w8peew9s062lbqH4geTA8mRvFHXwYf/AGOUtLt7+Llmc/LrRESWpERJCIiAiIgIiICIiAiIgIiICIiBiYMyZy9t7Zq0lZstbHgoHxnb5qiRbpOMuV1HptXadelrNtrBVHTzZvAKPEyn94tv2a2zjf2UXPdpnko8z5t6zy29tuzWWcdhwo+IgPsoPvPrObPJycvV2nh3fR+jnFOvLvf0RETF0HrpP2lf8df+Yn0BPn/SftK/46/8xPoGer0/iuL/ACn9sf8ACeRuXjCcS8RBYDPtFQcE48ucj++G9tWzq8tiy1h+rrBwT+83kso3U7f1Nmq/TGucXA5RgcBFHRFXpwenj9c9ePHcu7mSPpeRnebc7T61SSi1WfJsQBWz+9j4w+uau4++qbQXu7OGvUKPaTPJ1Hy08x5jwkwlLLLqq5YyzVfNO1NnWaW5qLV4WU4Pkw8GHoZqmWl2wbMHBTqlHMN3dh81PNc/by+2VZM7NOZzYdOWmZ093tu3aC4XUnIOBYhOEuQeDeRGThuo+rIPLmZCmOVxu4+id3dvU66kW0nyDqfjVvjmrD7/ABnXBnzfsPbFuiuF1LYI+Op+K6/NYf8AmJem7G8dWvqD1nDDHeIfjI33j1l5duhxc0zmvu70TAmZZuREQEREBERAREQEREBERAREQPG9iqsVHEQCQOmT5SjNtbSu1NzPqMqwJHAeQq/dA8Pvl7mRDfDdJdUDdSFS8D6luA+S3r5GZcuNynZ7PRc2HFn9U8/f4VRE/V1TIzK6srKcMrDDKfIifmeN9DLvvCIiQl66T9pX/HX/AJiXVvLr7dNpbLtPSb3Ueyo8B4tj5QHXA5yldJ+0r/jr/wAxPoGer0/iuN/Kf2x/yvl3X66zUWNdc5d3OWY/2A8APKa8tntB3A4+LV6FPb5m6lQALPEug+d+74/XKlJ8TyxnOeWMdc56Tp4Zyzs5kemn1D1utlbtW6HiRlOGUjxBn0NuTtW/V6NLtTUamPIHoLV8LAvVQfIyAdn3Z/3pXWa5MJyailhzs8RZYD0XyQ9ep5cjcAGJjy5Y3tEVDO1QA7Nc+T04/nEpGXH2u6sJolq8bLEx54T2icfZKdnny8ud6m/UxERKvMzNvZO07dLcttDFWBAAGSHB+SV+UD5TVRSxCqCzEgKAMszHoAB1Mt7cLcYabh1WqUNdjNaHmunBHU+b+vh4SZNt+HDLLLt2TXZGpe2hLLajS7KC6EhihPhkTemBMzR0iIiAiIgIiICIiAiIgIiICIiAmCJmIEW3s3WTWLxphLlHst4OB8h/MevhKl1Wnap2rsUqynDKeoP4T6Bke3o3aTWpnklqj2Hx/wBLeY/tMOTi6u88uh6P1l4r05d5+lNRNjXaJ6LGqtQqy9QehHgwPiD5zXnls07uOUym54euk/aV/wAdf+Yn0AJ8+VWcLK3XhZWx58JBx/STtO0mzkBpFJJwALCSSegA4Zvw5TGXbmfyHBnyZS4zellSL6jcjRvrBrTUOMc2Tl3L2A8rWXHNh7icEgkZnY2RfdZUHvqWlzz4QxcqPDJwOc6E9Ut+zjWaumJr63WJQjWWuqIoyzMcATU29+k9wx0ZrFo5qLAWVh4ryIwfWUNt7a+q1LldW7lkODWw4FRh4cA5Z9Tk+srbpjy8vRPDa3y3hO0NSbBla0BWlTyPBnm5HgW5e4TgREq52eVyu6zP3RSzutdas7sQqKoyzMegAn60mle51rqRnZjhVXqT+HrLr3I3MTQL3luLNQw9puoqU9UT7z4/VEm2nFw3O/hr7jbkrowL7wtmoI5eK0A9VXzbzPu9ZyJiZEu6GOMxmozERJWIiICIiAiIgIiICIiAiIgIiICIiAmMTMSBwd5d3a9bXwt7LqD3Tge0h8j5qfESntp7Os01rU3LwsOnzXXwZT4iX7icjb+wqtbXwWDBHNHHxkbzB+6ZcnHMu88vb6T1eXDdZd8f0pJK2ZgqqWZiAoHMsT0AEtLc7dAaYC+8BriPZHVah5Dzb1mxupuiuj/WWFbbjkcYGFVfJQehPnJViRx8XT3vlp6v1t5Ppw8MiZiJs5z8mQ/ffcxNeveV8Nd6j2WxysUfIf7j4SYwYVyxmU1XzHqtK9VjV2IyOhw6nqD+HrP3s/QWam1aaULu3QDoB4sx8APOXfvluhXtBOIYruUew+Ov7r46rPfdLdarZ9XCuHsYDvbCPac+Q8lHlK9Lyf8ANer8PHc7dGvZ6ZOLLmH6x8cx+6vkslGIxMyz2Y4zGajMREJIiJIREQEREBERAREQEREBERAREQExmfiwkAkDJAOB0yfLMrOztcrVmQ6K7Ksyth6yOJSQcc+fMGTMbfAs/MSrx2v1+OivA/jT8ZId2t/tJrn7pTZTYfipaFUvjqEYEgn0zmLjZ9hL5icfefbP6DpX1Xdm1UKcahgjcLMFyM8jzK8vrkI+F9PoN/8AOh++Jjb4FoRKv+F9PoN/86fjJJubvf8A6k1xWlqVr4BhmDOzNz8OQEXGzyJZGZW+0O1NaLnpfRWlkdkbhdCCR5c5r/C+n0G/+dPxk9GXwLQzErTQdqS33VUJpLEayytOJ2UqoZgCcLzJxn7Z3t8t8Rsxqw+ne1bA3CyuqkMvUFW9COcjpu9CW4iR/dHeRNo0m5E7vDFWQsrMuOhYDpmdjW3FK3dV4iqswXPDxYGcZ8JFmrobGYkO3Q32G0rbK69NZUK1DWMzqcFiQqgLnOeFvdO1vBt6nQUm7UOVGQqKBxPYx6Kq+J/sOZiyy6HXiVVb2ukse52e7oPF7OFvtCI4HvnT2V2raSw8N9dulPiWAesH+JeY+0CW6MvgWHE8NNqFsRXQ5VgCpwRkHocGe8qEREBERAREQEREBERAREQERED8P0P1GUX2fVq22nVlVhxazkQGHxz4GXo/Q/UZRnZ44G2nLEAcWt5k4HxzNOPxUxdbbOpIwaaj9aL+EpntS2Cuj1NV+mHdCzLKF5BL6yCHXy+SZdDaysDJsrA9WUD+8pftT28us1NVGmPeivKgrzD3uQAi+fgJHHvqIme92vOp3dbUEYNlGlcjyZnrJ/rIh2c7xaLSVXJqyoZnVkyneeyFweeDjnJfvboDpt3W05OTXRpUb1ZXrB/rI32W7G0epovbVU02MtihTYASF4ckDPhmWmum7+RKtLvpsy2xKqlV3sdUVe54eZ8SSMYAkvo0iVsWREQkAMVULkDpnE4NW6+za3SyujT1ujB0ZCqspHrnpO/XqkZuBXVmA4iAQSFzjJxM7+EKIs1ldG3XuvwK01FpfK8Q4TWw+L48yJYn+/NkfOT/AJB/7ZXyaZLd4DXcqOjam0Or/FZeBjzz6gS1P9pbL+iaT3L+M1y123vwmtvY1mn1unr1KUIEclq+JFVvYchW5dOag/bIH23nA0h9b/7LLD0CafSUrVW9aVpxcALAhQ7E8I59MtgD6pXfbj8XS/8Az/4rKYf2hPKLJXq9i3U6pDxJaiMDz7u5CATW/kwzy/8A2XDszb9Wv0T3Un/03DqfjVvwnKsJnS7Lq1ezqaL1Do1NWfMHhGCD4ESpNoaPVbB1TcBL1WK6q3PguQgjgfydcy3bP/TykPYn+01v1Uf3snn220Wcelt592FuQHHJLWKHmfDiUDH8JmOxN/1+sHmmnP8A1WfjJvvbvBpdM9Gm1YV01BcPxDiRK0X47jy4io+0+UZWzPZ90U3f7RdBTSlTaazT8KorcKK6sVUAnK5J5+fOblt2xtrPWqsldoZGX2O5ewAglCDjiBxN7/YmydT7daIAQCO5tKrg9OSmVz2g7C0uhsrXSXMzEMzqW7w1cPNW4vA58DJkxt7blF+1qAAAMAcgPIDwn7nK3bsd9Hp2tzxmtC+evFjxnVmKCIiAiIgIiICIiAiIgIiICIiB52AkEA4JBweuD54lY2dkgZmc66wMzMzcNaj2mJJxz6ZMsvU3hEZyCQoJIGMkAZkJHabpiM/o+s5+lH5sdfT99L4YZZeJtyT2QqeR19xH8CyRbs7gaXQsLRx32jPC9mDwZ6lFAAU+uM8+s1fhN030fV+6j82PhN030fV+6j82ReXfba3scnxUg3o2MddpX0vemoOU4mChzwqwbAB6HKjn9cg69kKjpr7R9Vaj+xnY+EzTfR9X7qPzY+E3TfR9X7qPzYnLJ2lPY5PiuR8EY/4hd/Iv4zv7m7mHZttrjUNeLERfbXhZWVifDqOc1/hN030fV+6j82PhN030fV+6j82Ly7mrT2OT4rnbR7Le/usvbWurO7OeGtQAT4DnPH4Ix/xC/wDkX8Z1/hN030fV+6j82PhM030fV+6j82T735T7HJ8VyE7KTWyWLrbHZHrYK6DgbhcMQcHPhJFvpud/qbV8Woalaw3CFQMSzdSWJ8gOU1PhN030fV+6j82PhN030fV+6j82R7vfe0exyfFSzZOkamiupmDlFC8QHDkDkOWfKa+8mx11ums074HEBwsV4+BgeTAecjfwm6b6Pq/dR+bHwm6b6Pq/dR+bI6552exyfFe2524/+m2vYmpa0OgV1ZFU+ycqQwPLqffOjvFufpdoHivRuPhCpYrFbEUZIA8CMsTggjn0nI+E3TfR9Z7qPzY+E3TfR9X7qPzZN5Jvez2OT4rhW9kbKT3G0HrXnyavJ+0oyg+6dPYfZbp6XFuotfVMCGCkBK+IdCwGS32nE2vhN030fV+6j82PhN030fV+6j82Tebf3T7HJ8VOQMcpmaOyNorqaUvRWVXGQGwGA9eEkf1m9DGyy6rMREBERAREQEREBERAREQEREDE0TtOkXjTGxO9K8YTPtFPnY8pt2OFUsegBJ8TylXXabWPxbXWgcQtF1YJfvv0VMp3Hd8Oclctw/OMmTYtPE19bq66Eay10rRRlmYhVA9SZ+tLeLEV1BAZQwBGCMjoQehkZ340js2ju7pr6aL+81NajiLKVKq4X5XAx4sSJB2Nm7d02pYpTdW7AZKg4bh+dwnnjkefpOpiRzQbVo1OprNeltZlWz9c1JqFIIHs5cAktzHLOMc8Zkkiwae0do1aZA97rWpZVBbkCzHAE2l58xIPvTo7dfqv0dalspoQlw7NWraiwYRlYDnwLk/W3pOvuVrLX0or1CsttJNVhIID8HIOpPUEYPKTrsJBYQoLHoASfqHMziU72aFyqrqqcsQq5bhDMTgKCeWc8sTs6k+w38Lf2Mq9dUr7GOg/RdRZqHqdFTuHAFrMeBi5GBjIOSfCJNi1AJp7S2hVpk7y91rTKrxNyHExwBn1MbIoevT0V2vxulVS2N8+xUAZvtIJnC7RFY6LC8ee/wBIfYQ2MAtqMWCjrgAn7JEnfQ6mg2/pb37uq5HfBOBnOB1M6uJFt29pK1hrNuovdssrWaY0BFUcxxcIHOSuLBz6tq0Pc+nWxGtQcToD7Sry5keXMRpNqU3WW012I71EC5RzNZOQA3keR90gO09BqU1+s12krZr6npVAwIS+myvgdc+IV+Fv/bOluLshtJrdfU3Gx7vZ5awg4vuKWvdYGPI+25OPDIk2QTrE5ibd0zJdYLk4aCReendMOobynUxIJvBsNbNp6cDvRXeGbWKoPdWvSVNRfyPMj1AA8JEmxNdNetiK6HKsAVPTIPQz3n4UYGBy+6fuAiIgIiICIiAiIgIiICIiAiIgYjEzEDEYmYgYxMxEDGIxMxAREQExMxAREQMYmYiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIH//Z" alt="Deens" style="width:100%">
+      <div class="container">
+        <h2>Deens Academy</h2>
+        <p class="title">Students</p>
+        <p>Some text that describes idk who</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

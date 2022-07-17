@@ -1,0 +1,70 @@
+<section>
+    <style>
+   .container {
+    position: relative;
+    font-family: Arial;
+    font-size: 30px;
+  }
+  
+  .text-block {
+    position: absolute;
+    top: 10px;
+    left:10px;
+    background-color: rgba(80, 74, 74, 0);
+    color: rgb(146, 145, 214);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(5, 12, 82);
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: rgb(5, 12, 82);
+    padding-right: 40px;
+    opacity: 1;
+  right: 0;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+  <img class="mySlides" src="./1.jpg"  width="1250" height="550" padding="0">
+  <img class="mySlides" src="./2.jpg"  width="1250" height="550" padding="0">
+  <img class="mySlides" src="./3.jpg"  width="1250" height="550" padding="0">
+  <div class="slideshow-item-text">
+    <div class="text-block">
+      <h1>Crowdfunding</h1>
+      <p>Help us, Help the people</p>
+    </div>
+    <button class="btn">Learn More</button>
+  </section>
+  
+  <script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+  }
+  </script>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="left-nav">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Profile</a>
+            <a href="./causes.html">Causes</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./login.html">Login</a>
+          </div>
+            <img src="" alt="Logo">
+            <h3>W</h3>
+        </div>
+        <div id="space"></div>
+        <div class="topnav">
+          <a class="active" href="./">Why Donate</a>
+          <a href="./causes.html">Causes</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+          </nav>
+
+<div class="container">
+    <img class="mySlides" src="./1.jpg"  width="1250" height="550" padding="0">
+    <img class="mySlides" src="./2.jpg"  width="1250" height="550" padding="0">
+    <img class="mySlides" src="./3.jpg"  width="1250" height="550" padding="0">
+    <div class="slideshow-item-text">
+      <div class="text-block">
+        <h1>Crowdfunding</h1>
+        <p>Help us, Help the people</p>
+      </div>
+      <button class="btn">Learn More</button>
+    </div>
+</div>
+          <div>
+            <div>
+              <h2>Overview</h2>
+              <p>
+            
+              </p>
+
+              <div>
+                Cause 1      
+              </div>
+
+              <div>
+                Cause 2
+              </div>
+
+              <div>
+                Cause 3
+              </div>
+</body>
+</html>
+
+<style>
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+  .container {
+    position: relative;
+    font-family: Arial;
+    font-size: 30px;
+  }
+  
+  .text-block {
+    position: absolute;
+    top: 10px;
+    left:10px;
+    background-color: rgba(80, 74, 74, 0);
+    color: rgb(146, 145, 214);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(5, 12, 82);
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: rgb(5, 12, 82);
+    padding-right: 40px;
+    opacity: 1;
+  right: 0;
+  }
+  </style>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+  }
+  </script>
+  
+
+
+
+
+
+
